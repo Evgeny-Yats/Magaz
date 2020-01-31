@@ -1,0 +1,24 @@
+1) Пишем в консоль git clone http://.....
+2) Заходим в папку проекта и в консоли пишем composer install
+3) Создаем файл .env и редактируем:
+
+APP_URL=http://store.test - Адрес сайта
+DB_HOST=192.168.200.79 - Адрес хоста
+DB_DATABASE=products - Название схемы(базы данных)
+DB_USERNAME=user - Имя базы данных
+DB_PASSWORD=user - Пароль базы данных
+
+4) Зайти в MySql Workbench и сделать следующее в ней создать схему products
+5) Зайти в консоль и прописать php artisan migrate
+6) В консоле написать php artisan db:seed
+
+После этого в программе Mysql Wrockbench если обновить появится таблицы
+
+7) Зайти по адресу https://mailtrap.io/ и выполнить шаги:
+Зарегистрироваться
+После добавить в файл .env свои данные
+
+MAIL_HOST=smtp.mailtrap.io - свои
+MAIL_USERNAME=null - свои
+MAIL_PASSWORD=null - свои
+
